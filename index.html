@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./app.js" defer type="module"> </script>
+    <link rel="stylesheet" href="./app.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Movie Book</div>
+    </nav> 
+    
+    <main id="main">
+        <!-- hello  there -->
+    </main>
+    <div id="booker">
+        <h3 class="v-none">Seat Selector</h3>
+        <div class="spn v-none">
+            Available: <span class="spn_color"></span>
+            Unvailable: <span class="spn_color" style="background-color: rgb(99, 98, 98);"></span>
+            Your Selection: <span class="spn_color" style="background-color: greenyellow;";></span>
+        </div>
+        <select class="v-none ticket_type">
+            <option disabled selected>Ticket Type</option>
+            <option>PREMIUM</option>
+            <option>CLUB</option>
+            <option>EXECUTIVE</option>
+        </select>
+        <select class="v-none slct">
+            <option disabled selected>Qty</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+        <div id="booker-grid-holder"></div>
+        <button id="book-ticket-btn" class="v-none">PROCEED</button>
+    </div>
+
+</body>
+<!-- <script src="./app.js" type="module"></script> -->
+<!-- <script src="./api.js" type="module"></script> -->
+</html>
